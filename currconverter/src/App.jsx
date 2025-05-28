@@ -38,7 +38,7 @@ const App = () => {
               <div className='w-full mb-1'>
                 <InputBox label='to' amount={convAmt} selectedCurr={to} currOptions={options} disableAmt={true} onCurrChange={(c) => setTo(c)} onAmountChange={(amt) => setVal(amt)} className='bg-white p-3 rounded-md' />
               </div>
-              <button type='submit' onClick={convert} className='w-full bg-blue-600 text-white px-4 py-3 rounded-lg'>Convert</button>
+              <button type='submit' onClick={convert} className='w-full bg-blue-600 text-white px-4 py-3 rounded-lg'>Convert {from.toUpperCase()} to {to.toUpperCase()}</button>
           </form>
         </div>
       </div>
