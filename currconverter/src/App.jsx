@@ -36,7 +36,7 @@ const App = () => {
                 <button className='left-1/2 absolute -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-blue-600 text-white px-2 py-0.5' onClick={swapVals}>Swap</button>
               </div>
               <div className='w-full mb-1'>
-                <InputBox label='to' amount={convAmt} selectedCurr={to} currOptions={options} disableAmt={true} onCurrChange={(c) => setTo(c)} onAmountChange={(amt) => setVal(amt)} className='bg-white p-3 rounded-md' />
+                <InputBox label='to' amount={Math.floor(convAmt)} selectedCurr={to} currOptions={options} disableAmt={true} onCurrChange={(c) => setTo(c)} onAmountChange={(amt) => setVal(amt)} className='bg-white p-3 rounded-md' />
               </div>
               <button type='submit' onClick={convert} className='w-full bg-blue-600 text-white px-4 py-3 rounded-lg'>Convert {from.toUpperCase()} to {to.toUpperCase()}</button>
           </form>
