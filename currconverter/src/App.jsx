@@ -30,7 +30,7 @@ const App = () => {
         <div className='w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30'>
           <form onSubmit={(e) => e.preventDefault() && convert()}>
               <div className='w-full mb-1'>
-                <InputBox />
+                <InputBox label='from' amount={val} currOptions={options} onCurrChange={(c) => setFrom(c)} onAmountChange={(amt) => setVal(amt)} />
               </div>
           </form>
         </div>
